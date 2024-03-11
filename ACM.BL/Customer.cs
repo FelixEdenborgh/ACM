@@ -2,6 +2,17 @@
 {
     public class Customer
     {
+
+        // constructor
+        public Customer()
+        {
+            
+        }
+        public Customer(int customerId)
+        {
+            CustomerId = customerId;
+        }
+
         public int CustomerId { get; private set; } // propg tab tab
         
         public string EmailAddress { get; set; } // prop snippet

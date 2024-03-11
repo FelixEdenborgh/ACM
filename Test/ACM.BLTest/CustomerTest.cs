@@ -58,7 +58,7 @@ namespace ACM.BLTest
             Assert.AreEqual (expected, actual);
         }
 
-
+        [TestMethod]
         public void StaticTest()
         {
             //-- Arrange
