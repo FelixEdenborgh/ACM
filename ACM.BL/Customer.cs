@@ -58,27 +58,28 @@
         // Methods
         // ---------------------------------------------------------------------------------------------------
 
-        // Retrieve one customer.
-        public Customer Retrieve(int customerId)
-        {
-            // Code that retrieves the defined customer
-            return new Customer();
-        }
+        // Dont need them we have them already now in CustomerRepository class
+        //// Retrieve one customer.
+        //public Customer Retrieve(int customerId)
+        //{
+        //    // Code that retrieves the defined customer
+        //    return new Customer();
+        //}
 
-        // Retrieve all customers.
-        public List<Customer> Retrieve() 
-        {
-            // Code that retrieves all of the customers
+        //// Retrieve all customers.
+        //public List<Customer> Retrieve() 
+        //{
+        //    // Code that retrieves all of the customers
 
-            return new List<Customer>();
-        }
+        //    return new List<Customer>();
+        //}
 
-        // Saves teh current customer.
-        public bool Save()
-        {
-            // Code that saves the defined customer
-            return true;
-        }
+        //// Saves teh current customer.
+        //public bool Save()
+        //{
+        //    // Code that saves the defined customer
+        //    return true;
+        //}
 
         // Validates the customer data.
         public bool Validate()
