@@ -4,20 +4,24 @@
     {
 
         // constructor
-        public Customer()
+        public Customer() : this(0)
         {
             
         }
         public Customer(int customerId)
         {
             CustomerId = customerId;
+            AddressList = new List<Address>();
         }
 
+
+        public List<Address> AddressList { get; set; }
         public int CustomerId { get; private set; } // propg tab tab
         
         public string EmailAddress { get; set; } // prop snippet
 
         public string FirstName { get; set; }
+        public int CustomerType { get; set; }
 
         // ------------------------------------------------------------------
 

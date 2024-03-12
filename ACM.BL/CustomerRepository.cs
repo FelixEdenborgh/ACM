@@ -8,6 +8,11 @@ namespace ACM.BL
 {
     public class CustomerRepository
     {
+        public CustomerRepository()
+        {
+            addressRepository = new AddressRepository();
+        }
+        private AddressRepository addressRepository { get; set; }
         public Customer Retrieve(int customerId)
         {
             // creates the instace of the customer class pass in the requested id
@@ -20,6 +25,8 @@ namespace ACM.BL
                 customer.EmailAddress = "fbaggins@hobbiton.me";
                 customer.FirstName = "Frodo";
                 customer.LastName = "Baggins";
+                customer.AddressList = addressRepository.RetriveByCustomerId(customerId)
+                    .ToList();
             }
 
             return customer;
