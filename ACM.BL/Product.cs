@@ -24,7 +24,7 @@ namespace ACM.BL
         public string ProductDescription { get; set;}
         public decimal? CurrentPrice { get; set; } // can be null
 
-
+        public override string ToString() => ProductName;
         //public Product Retrieve(int productId)
         //{
         //    return new Product();
