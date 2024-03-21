@@ -1,6 +1,8 @@
-﻿namespace ACM.BL
+﻿using Acme.Common;
+
+namespace ACM.BL
 {
-    public class Customer
+    public class Customer : EntityBase, ILoggable
     {
 
         // constructor
@@ -88,7 +90,7 @@
         //}
 
         // Validates the customer data.
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
 
@@ -96,6 +98,11 @@
             if(string.IsNullOrWhiteSpace(EmailAddress)) isValid = false;
 
             return isValid;
+        }
+
+        public string Log()
+        {
+            throw new NotImplementedException();
         }
     }
 }
