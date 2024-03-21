@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Acme.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,8 @@ namespace ACM.BL
 {
     public class Product : EntityBase
     {
+        private string _productName;
+
         public Product()
         {
             
@@ -20,7 +23,19 @@ namespace ACM.BL
 
 
         public int ProductId { get; private set; }
-        public string ProductName { get; set;}
+        public string ProductName
+        {
+            get
+            {
+                //instance som lägger till space om det är upper case letter
+                //var stringHandler = new StringHandler();
+                return StringHandler.InsertSpaces(_productName);
+            }
+            set
+            {
+                _productName = value;
+            }
+        }
         public string ProductDescription { get; set;}
         public decimal? CurrentPrice { get; set; } // can be null
 
