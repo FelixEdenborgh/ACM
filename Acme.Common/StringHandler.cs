@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Acme.Common
 {
+    // Insert spaces before each capital letter in a string
     public static class StringHandler
     {
         public static string InsertSpaces(this string source)
