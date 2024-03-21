@@ -29,7 +29,7 @@ namespace ACM.BL
             {
                 //instance som lägger till space om det är upper case letter
                 //var stringHandler = new StringHandler();
-                return StringHandler.InsertSpaces(_productName);
+                return _productName.InsertSpaces();
             }
             set
             {
